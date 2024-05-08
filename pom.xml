@@ -83,7 +83,6 @@
                 <configuration>
                     <artifactSet>
                         <includes>
-                            <include>com.turt2live.metrics:MetricsExtension</include>
                             <include>commons-logging:commons-logging</include>
                             <include>org.apache.tomcat:tomcat-jdbc</include>
                             <include>org.apache.tomcat:tomcat-juli</include>
@@ -131,16 +130,12 @@
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
-        <repository>
-            <id>Plugin MetricsExtension</id>
-            <url>http://repo.turt2live.com</url>
-        </repository>
     </repositories>
     <dependencies>
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.8-R0.1-SNAPSHOT</version>
+            <version>1.8.8-R0.1-SNAPSHOT</version>
             <type>jar</type>
             <scope>provided</scope>
         </dependency>
@@ -149,11 +144,6 @@
             <artifactId>junit-dep</artifactId>
             <version>4.10</version>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.turt2live.metrics</groupId>
-            <artifactId>MetricsExtension</artifactId>
-            <version>0.0.5-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
